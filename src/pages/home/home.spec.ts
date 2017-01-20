@@ -16,7 +16,7 @@ describe('Page: Home Page', () => {
 
 		TestBed.configureTestingModule({
 
-			declarations: [MyApp, HomePage]
+			declarations: [MyApp, HomePage],
 			
 			providers: [
 
