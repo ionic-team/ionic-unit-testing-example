@@ -13,7 +13,7 @@ describe('Component: Root Component', () => {
 		TestBed.configureTestingModule({
 
 			declarations: [MyApp],
-			
+
 			providers: [
 
 			],
