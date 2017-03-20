@@ -32,7 +32,7 @@
   "devDependencies": {
     "@angular/cli": "^1.0.0-rc.2",
     "@ionic/app-scripts": "1.1.4",
-    "@types/jasmine": "^2.5.40",
+    "@types/jasmine": "2.5.40",
     "@types/node": "^7.0.0",
     "codecov": "^1.0.1",
     "jasmine-core": "^2.5.2",
