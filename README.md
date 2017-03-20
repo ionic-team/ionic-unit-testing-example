@@ -9,3 +9,5 @@ Based on [Josh Morony](https://www.joshmorony.com/)'s excellent [Unit Testing gu
 Clone repo, run `npm install`
 
 To run tests, run `npm test`
+
+To run e2e tests, run `ionic serve -p 8100` and then `npm run e2e`
