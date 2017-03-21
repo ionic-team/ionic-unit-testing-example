@@ -9,3 +9,5 @@ Based on [Josh Morony](https://www.joshmorony.com/)'s excellent [Unit Testing gu
 Clone repo, run `npm install`
 
 To run tests, run `npm test`
+
+To generate test coverage report `npm run test:coverage`

@@ -8,7 +8,8 @@
     "build": "ionic-app-scripts build",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "test": "ng test"
+    "test": "ng test",
+    "test:coverage": "ng test --watch=false --progress=false --code-coverage"
   },
   "dependencies": {
     "@angular/common": "2.4.8",
