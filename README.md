@@ -1,20 +1,10 @@
-Ionic 2 App Base
+Ionic Unit Testing Example
 =====================
 
-This is the base template for Ionic 2 starter apps.
+Based on the awesome [unit testing example](https://github.com/roblouie/unit-testing-demo) from [@roblouie](https://github.com/roblouie/) :thumbsup:
 
-## Using this project
+Clone repo, run `npm install`.
 
-You'll need the Ionic CLI with support for v2 apps:
+To run the tests, run `npm test`.
 
-```bash
-$ npm install -g ionic
-```
-
-Then run:
-
-```bash
-$ ionic start myApp
-```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/docs/v2/getting-started/) page.
+See the example test in `src/app/app.component.spec.ts` for an example of a component test.
