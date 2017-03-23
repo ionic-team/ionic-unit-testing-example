@@ -24,6 +24,12 @@ module.exports = function (config) {
       noInfo: true
     },
 
+    browserConsoleLogOptions: {
+      level: 'log',
+      format: '%b %T: %m',
+      terminal: true
+    },
+
     reporters: ['kjhtml', 'dots'],
     port: 9876,
     colors: true,

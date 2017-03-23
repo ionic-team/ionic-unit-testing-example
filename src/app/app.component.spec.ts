@@ -1,6 +1,9 @@
 import { async, TestBed } from '@angular/core/testing';
 import { IonicModule } from 'ionic-angular';
 
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
 import { MyApp } from './app.component';
 
 describe('MyApp Component', () => {
@@ -12,6 +15,10 @@ describe('MyApp Component', () => {
       declarations: [MyApp],
       imports: [
         IonicModule.forRoot(MyApp)
+      ],
+      providers: [
+        StatusBar,
+        SplashScreen
       ]
     })
   }));
