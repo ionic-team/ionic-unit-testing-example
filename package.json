@@ -8,7 +8,8 @@
     "build": "ionic-app-scripts build",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "test": "karma start ./test-config/karma.conf.js"
+    "test": "karma start ./test-config/karma.conf.js",
+    "test-coverage": "karma start ./test-config/karma.conf.js --coverage"
   },
   "dependencies": {
     "@angular/common": "2.4.8",
@@ -38,9 +39,11 @@
     "@types/node": "^7.0.8",
     "angular2-template-loader": "^0.6.2",
     "html-loader": "^0.4.5",
+    "istanbul-instrumenter-loader": "^2.0.0",
     "jasmine": "^2.5.3",
     "karma": "^1.5.0",
     "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage-istanbul-reporter": "^1.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-sourcemap-loader": "^0.3.7",
