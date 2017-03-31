@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Page3Detail } from './page3-detail/page3-detail';
-import { Page3Item, Page3Service } from '../../providers/page3service';
+import { Page3Item, Page3Service } from '../../providers/page3-service/page3-service';
 
 @Component({
   selector: 'page-page3',

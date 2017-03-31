@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { Page3Item } from '../../../providers/page3service';
+import { Page3Item } from '../../../providers/page3-service/page3-service';
 
 @Component({
   selector: 'page3-detail',

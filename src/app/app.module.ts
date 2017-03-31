@@ -10,7 +10,7 @@ import { Page3Detail } from '../pages/page3/page3-detail/page3-detail';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { Page3Service } from '../providers/page3service';
+import { Page3Service } from '../providers/page3-service/page3-service';
 
 @NgModule({
   declarations: [

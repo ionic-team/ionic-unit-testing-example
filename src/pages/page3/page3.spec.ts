@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { Page3 } from "../page3/page3";
-import { Page3Item, Page3Service } from '../../providers/page3service';
+import { Page3Item, Page3Service } from '../../providers/page3-service/page3-service';
 import { IonicModule, NavController } from "ionic-angular/index";
 import { BehaviorSubject } from 'rxjs';
 
