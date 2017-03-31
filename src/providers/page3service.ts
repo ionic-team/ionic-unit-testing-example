@@ -13,8 +13,8 @@ const iconNames: string[] = ['flask', 'wifi', 'beer', 'football', 'basketball', 
 
 @Injectable()
 export class Page3Service {
-  page3data: Array<{title: string, note: string, icon: string}>;
-  page3Subject: BehaviorSubject<Array<{title: string, note: string, icon: string}>> = new BehaviorSubject([]);
+  page3data: Array<Page3Item>;
+  page3Subject: BehaviorSubject<Array<Page3Item>> = new BehaviorSubject([]);
 
   constructor() {
     this.createDataForService();

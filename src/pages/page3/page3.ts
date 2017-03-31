@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Page3Service } from '../../providers/page3service';
+import { Page3Item, Page3Service } from '../../providers/page3service';
 
 @Component({
   selector: 'page-page3',
@@ -8,7 +8,7 @@ import { Page3Service } from '../../providers/page3service';
 })
 export class Page3 {
   selectedItem: any;
-  items: Array<{title: string, note: string, icon: string}>;
+  items: Array<Page3Item>;
 
   constructor(
     public navCtrl: NavController,
