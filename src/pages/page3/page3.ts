@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Page3Detail } from './page3-detail/page3-detail';
 import { Page3Item, Page3Service } from '../../providers/page3service';
 
 @Component({
@@ -22,9 +23,9 @@ export class Page3 {
   }
 
   itemTapped(event, item) {
-    // this.navCtrl.push(Page3Detail, {
-    //   item: item
-    // });
+    this.navCtrl.push(Page3Detail, {
+      item: item
+    });
   }
 
 }
