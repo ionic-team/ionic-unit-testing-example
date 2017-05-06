@@ -17,7 +17,7 @@ import { BrowserModule } from '@angular/platform-browser';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {}, { links: [] })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
