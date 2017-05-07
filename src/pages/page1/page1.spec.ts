@@ -29,10 +29,11 @@ describe('Page1', function() {
 
   it('should create component', () => expect(comp).toBeDefined());
 
-  it('should have expected <h3> text', () => {
-    fixture.detectChanges();
+  it('should have expected <h3> text', async () => {
+    await fixture.detectChanges();
     const h3 = de.nativeElement;
-    expect(h3.innerText).toMatch(/ionic/i,
+
+    expect(h3.innerHTML).toMatch(/ionic/i,
       '<h3> should say something about "Ionic"');
   });
 });
