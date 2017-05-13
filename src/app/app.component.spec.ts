@@ -30,11 +30,11 @@ describe('MyApp Component', () => {
     component = fixture.componentInstance;
   });
 
-  it ('should be created', () => {
+  it('should be created', () => {
     expect(component instanceof MyApp).toBe(true);
   });
 
-  it ('should have two pages', () => {
+  it('should have two pages', () => {
     expect(component.pages.length).toBe(2);
   });
 

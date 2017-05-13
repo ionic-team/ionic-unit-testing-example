@@ -5,14 +5,14 @@ import { Page1 } from './page1';
 import { IonicModule, Platform, NavController } from 'ionic-angular/index';
 import { PlatformMock } from '../../../test-config/mocks-ionic';
 
-describe('Page1', function () {
+describe('Page1', function() {
   let de: DebugElement;
   let comp: Page1;
   let fixture: ComponentFixture<Page1>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Page1 ],
+      declarations: [Page1],
       imports: [
         IonicModule.forRoot(Page1)
       ],
@@ -29,7 +29,7 @@ describe('Page1', function () {
     de = fixture.debugElement.query(By.css('h3'));
   });
 
-  it('should create component', () => expect(comp).toBeDefined() );
+  it('should create component', () => expect(comp).toBeDefined());
 
   it('should have expected <h3> text', () => {
     fixture.detectChanges();
