@@ -1,8 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { Page1 } from "./page1";
-import { IonicModule, NavController } from "ionic-angular/index";
+import { Page1 } from './page1';
+import { IonicModule, Platform, NavController } from 'ionic-angular/index';
+import { PlatformMock } from '../../../test-config/mocks-ionic';
 
 describe('Page1', function() {
   let de: DebugElement;
@@ -16,7 +17,8 @@ describe('Page1', function() {
         IonicModule.forRoot(Page1)
       ],
       providers: [
-        NavController
+        NavController,
+        { provide: Platform, useClass: PlatformMock}
       ]
     });
   }));
