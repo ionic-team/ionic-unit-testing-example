@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader?attrs=false'
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
-      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      /(ionic-angular)|(angular(\\|\/)core(\\|\/)@angular)/,
       root('./src'), // location of your src
       {} // a map of your routes
     )

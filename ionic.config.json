@@ -1,5 +1,7 @@
 {
-  "name": "test-test",
+  "name": "ionic-unit-testing-example",
   "app_id": "",
-  "projectTypeId": "ionic-angular"
+  "projectTypeId": "ionic-angular",
+  "v2": true,
+  "typescript": true
 }
