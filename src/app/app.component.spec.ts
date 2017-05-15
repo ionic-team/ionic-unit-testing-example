@@ -22,8 +22,8 @@ describe('MyApp Component', () => {
         IonicModule.forRoot(MyApp)
       ],
       providers: [
-        { provide: StatusBar, useClass: StatusBarMock},
-        { provide: SplashScreen, useClass: SplashScreenMock},
+        { provide: StatusBar, useClass: StatusBarMock },
+        { provide: SplashScreen, useClass: SplashScreenMock },
         { provide: Platform, useClass: PlatformMock }
       ]
     })
