@@ -1,3 +1,6 @@
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
 export class PlatformMock {
   public ready(): Promise<{String}> {
     return new Promise((resolve) => {
@@ -60,5 +63,17 @@ export class PlatformMock {
 
   public getActiveElement(): any {
     return document['activeElement'];
+  }
+}
+
+export class StatusBarMock extends StatusBar {
+  styleDefault() {
+    return;
+  }
+}
+
+export class SplashScreenMock extends SplashScreen {
+  hide() {
+    return;
   }
 }
