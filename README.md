@@ -52,6 +52,8 @@ See the example test in `src/app/app.component.spec.ts` for an example of a comp
 End-To-End Tests (Browser-Only)
 -------------------------------
 
+To install and update the webdriver, run `npm run e2e-update`.
+
 To serve the app, run `ionic serve`.
 
 To run the end-to-end tests, run (while the app is being served) `npm run e2e`.
