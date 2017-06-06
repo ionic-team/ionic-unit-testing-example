@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PlatformMock, StatusBarMock, SplashScreenMock } from '../../../test-config/mocks-ionic';
 
-describe('Page1', function() {
+describe('Page1', () => {
   let de: DebugElement;
   let comp: Page1;
   let fixture: ComponentFixture<Page1>;
