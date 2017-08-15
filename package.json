@@ -9,7 +9,8 @@
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
     "test": "karma start ./test-config/karma.conf.js",
-    "test-ci": "karma start ./test-config/karma.conf.js --single-run",
+    "test-coverage": "karma start ./test-config/karma.conf.js --coverage"
+    "test-ci": "karma start ./test-config/karma.conf.js --single-run"
     "e2e": "webdriver-manager update --standalone false --gecko false; protractor ./test-config/protractor.conf.js"
   },
   "dependencies": {
@@ -38,10 +39,12 @@
     "@types/node": "^7.0.8",
     "angular2-template-loader": "^0.6.2",
     "html-loader": "^0.4.5",
+    "istanbul-instrumenter-loader": "^2.0.0",
     "jasmine": "^2.5.3",
     "jasmine-spec-reporter": "^4.1.0",
     "karma": "^1.5.0",
     "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage-istanbul-reporter": "^1.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-sourcemap-loader": "^0.3.7",
