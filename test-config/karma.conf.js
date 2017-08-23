@@ -6,13 +6,26 @@ module.exports = function(config) {
 
     frameworks: ['jasmine'],
 
-    files: [{
-      pattern: './karma-test-shim.js',
-      watched: true
-    }],
+    files: [
+      {
+        pattern: './test-config/karma-test-shim.js',
+        watched: true
+      },
+      {
+        pattern: './src/assets/**/*',
+        watched: false,
+        included: false,
+        served: true,
+        nocache: false
+      }
+    ],
+
+    proxies: {
+      '/assets/': '/base/src/assets/'
+    },
 
     preprocessors: {
-      './karma-test-shim.js': ['webpack', 'sourcemap']
+      './test-config/karma-test-shim.js': ['webpack', 'sourcemap']
     },
 
     webpack: webpackConfig,
