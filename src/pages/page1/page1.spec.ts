@@ -41,4 +41,10 @@ describe('Page1', () => {
     expect(h3.innerText).toMatch(/ionic/i,
       '<h3> should say something about "Ionic"');
   });
+
+  it('should show the favicon as <img>', () => {
+    fixture.detectChanges();
+    const img: HTMLImageElement = fixture.debugElement.query(By.css('img')).nativeElement;
+    expect(img.src).toContain('assets/icon/favicon.ico');
+  });
 });
