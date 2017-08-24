@@ -8,8 +8,8 @@
     "build": "ionic-app-scripts build",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "test": "karma start",
-    "test-ci": "karma start --single-run",
+    "test": "karma start ./test-config/karma.conf.js",
+    "test-ci": "karma start ./test-config/karma.conf.js --single-run",
     "e2e": "npm run e2e-update && npm run e2e-test",
     "e2e-test": "protractor ./test-config/protractor.conf.js",
     "e2e-update": "webdriver-manager update --standalone false --gecko false"
