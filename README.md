@@ -7,13 +7,27 @@ Special thanks to all of the contributors. With the exception of the Ionic team'
 
 UPDATES:
 --------
-*2017-05-28: Update to Version 3.3.0*
+### **2017-08-26: Update to `ionic-angular` version 3.6.0**
+
+We updated the project to `ionic-angular` version `3.6.0`. Developers wishing to use this should also update Ionic CLI for a better experience. With today's update, this project is now at version `0.0.5`.
+
+## **Also of note:**
+
+## **Added: Fix for assets not being found by Karma**
+
+Thanks to [@datencia](https://github.com/datencia) for providing an update to our Karma configuration that properly sets the Karma base path so that image assets can be found during testing. This fix should also work any JSON data files you might want to use for testing. He also provided an image and updated our sample unit test spec file that tests that the image is found. 
+
+## **Added: Update code to match Ionic templates**
+
+Thanks (again) to [@danielsogl](https://github.com/danielsogl/) for providing a code update to the project so that our code matches code created by using the `ionic start` command. Having this code properly match is important as it provides the best practice guidance for handling application start up.
+
+### *2017-05-28: Update to Version 3.3.0*
 
 Thanks to [@danielsogl](https://github.com/danielsogl/) for getting us up-to-date with Ionic 3.3.0, Angular 4.1.2 and Ionic Native 3.10.2.
 
 Thanks to [@johnstonbl01](https://github.com/johnstonbl01/) for adding a couple of mocks that prevent us from seeing some unnecessary warning messages.
 
-*2017-05-12: Update to Version 3* 
+### *2017-05-12: Update to Version 3* 
 
 We've updated this repo to use Ionic v3.2.1 and Ionic CLI v3.0.0.
 
