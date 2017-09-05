@@ -7,11 +7,19 @@ Special thanks to all of the contributors. With the exception of the Ionic team'
 
 UPDATES:
 --------
+### **2017-09-05: Added Code Coverage Functionality**
+
+Thanks to @lathonez, we now have functioning code coverage functionality. With this update, developers can run `npm run test-coverage` which will run the project's unit tests with Karma and produce documentation that gives guidance on how well the project's tests cover the code.
+
+![Example Image of Completed Code Coverage](https://user-images.githubusercontent.com/1648535/30074946-54a36e50-9241-11e7-9ca8-6263d0353c58.png)
+
+The documentation is created inside the `/coverage` folder (ignored by git).
+
+## **Also of note:**
+
 ### **2017-08-26: Update to `ionic-angular` version 3.6.0**
 
 We updated the project to `ionic-angular` version `3.6.0`. Developers wishing to use this should also update Ionic CLI for a better experience. With today's update, this project is now at version `0.0.5`.
-
-## **Also of note:**
 
 ## **Added: Fix for assets not being found by Karma**
 
