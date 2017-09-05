@@ -44,20 +44,14 @@ To run the end-to-end tests, run (while the app is being served) `npm run e2e`.
 See the example end-to-end test in `e2e/app.e2e-spec.ts`.
 
 UPDATES:
-==========
-### **2017-08-26: Update to `ionic-angular` version 3.6.0**
+--------
+### **2017-09-05: Added Code Coverage Functionality**
 
-We updated the project to `ionic-angular` version `3.6.0`. Developers wishing to use this should also update Ionic CLI for a better experience. With today's update, this project is now at version `0.0.5`.
+Thanks to @lathonez, we now have functioning code coverage functionality. With this update, developers can run `npm run test-coverage` which will run the project's unit tests with Karma and produce documentation that gives guidance on how well the project's tests cover the code.
 
-### **Also of note:**
+![Example Image of Completed Code Coverage](https://user-images.githubusercontent.com/1648535/30074946-54a36e50-9241-11e7-9ca8-6263d0353c58.png)
 
-#### **Added: Fix for assets not being found by Karma**
-
-Thanks to [@datencia](https://github.com/datencia) for providing an update to our Karma configuration that properly sets the Karma base path so that image assets can be found during testing. This fix should also work any JSON data files you might want to use for testing. He also provided an image and updated our sample unit test spec file that tests that the image is found. 
-
-#### **Added: Update code to match Ionic templates**
-
-Thanks (again) to [@danielsogl](https://github.com/danielsogl/) for providing a code update to the project so that our code matches code created by using the `ionic start` command. Having this code properly match is important as it provides the best practice guidance for handling application start up.
+The documentation is created inside the `/coverage` folder (ignored by git).
 
 ## Looking for Version 2?
 
@@ -69,6 +63,19 @@ This repository is based on the awesome [unit testing example](https://github.co
 
 Past Updates
 ==========
+
+### **2017-08-26: Update to `ionic-angular` version 3.6.0**
+
+We updated the project to `ionic-angular` version `3.6.0`. Developers wishing to use this should also update Ionic CLI for a better experience. With today's update, this project is now at version `0.0.5`.
+
+## **Added: Fix for assets not being found by Karma**
+
+Thanks to [@datencia](https://github.com/datencia) for providing an update to our Karma configuration that properly sets the Karma base path so that image assets can be found during testing. This fix should also work any JSON data files you might want to use for testing. He also provided an image and updated our sample unit test spec file that tests that the image is found. 
+
+#### **Added: Update code to match Ionic templates**
+
+Thanks (again) to [@danielsogl](https://github.com/danielsogl/) for providing a code update to the project so that our code matches code created by using the `ionic start` command. Having this code properly match is important as it provides the best practice guidance for handling application start up.
+
 #### *2017-05-28: Update to Version 3.3.0*
 
 Thanks to [@danielsogl](https://github.com/danielsogl/) for getting us up-to-date with Ionic 3.3.0, Angular 4.1.2 and Ionic Native 3.10.2.
