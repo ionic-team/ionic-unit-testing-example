@@ -16,6 +16,15 @@ module.exports = {
         }, 'angular2-template-loader']
       },
       {
+        test: /.+\.ts$/,
+        exclude: /(index.ts|mocks.ts|\.spec\.ts$)/,
+        loader: 'istanbul-instrumenter-loader',
+        enforce: 'post',
+        query: {
+          esModules: true
+        }
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader?attrs=false'
       },
