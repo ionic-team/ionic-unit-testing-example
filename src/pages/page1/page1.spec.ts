@@ -5,7 +5,6 @@ import { Page1 } from './page1';
 import { IonicModule, Platform, NavController} from 'ionic-angular/index';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { PlatformMock, StatusBarMock, SplashScreenMock } from '../../../test-config/mocks-ionic';
 
 describe('Page1', () => {
   let de: DebugElement;
@@ -19,10 +18,7 @@ describe('Page1', () => {
         IonicModule.forRoot(Page1)
       ],
       providers: [
-        NavController,
-        { provide: Platform, useClass: PlatformMock},
-        { provide: StatusBar, useClass: StatusBarMock },
-        { provide: SplashScreen, useClass: SplashScreenMock },
+        NavController
       ]
     });
   }));
