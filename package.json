@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@angular/cli": "1.4.8",
+    "@angular/tsc-wrapped": "^4.4.6",
     "@ionic/app-scripts": "^3.0.0",
     "@types/jasmine": "^2.5.41",
     "@types/node": "^8.0.45",
