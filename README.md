@@ -45,6 +45,9 @@ See the example end-to-end test in `e2e/app.e2e-spec.ts`.
 
 UPDATES:
 --------
+### **2018-02-25: Updated to Ionic 3.9.2**
+Updated project to use the latest version Ionic and dependencies. Take a look at the [`package.json`](https://github.com/ionic-team/ionic-unit-testing-example/blob/master/package.json) for more details.
+
 ### **2017-09-05: Added Code Coverage Functionality**
 
 Thanks to @lathonez, we now have functioning code coverage functionality. With this update, developers can run `npm run test-coverage` which will run the project's unit tests with Karma and produce documentation that gives guidance on how well the project's tests cover the code.
