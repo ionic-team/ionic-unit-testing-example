@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { NavController, NavParams } from 'ionic-angular';
-
+@IonicPage()
 @Component({
   selector: 'page-page2',
   templateUrl: 'page2.html'
@@ -31,7 +31,7 @@ export class Page2 {
 
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
-    this.navCtrl.push(Page2, {
+    this.navCtrl.push('Page2', {
       item: item
     });
   }
