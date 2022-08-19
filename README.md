@@ -8,7 +8,7 @@ Special thanks to all of the contributors. With the exception of the Ionic team'
 
 ## How to Configure Your Ionic Application for Testing
 
-Read [this tutorial](https://leifwells.github.io/2017/08/27/testing-in-ionic-configure-existing-projects-for-testing/) for instructions on how to apply the testing configuration in this project to your own project. 
+Read [this tutorial](https://leifwells.github.io/blog/2017-08-27-adding-testing-to-ionic-app/) for instructions on how to apply the testing configuration in this project to your own project. 
 
 ## Mocking Classes for Ionic
 When a developer unit tests a component, the objective is to isolate that component as much as possible. In the case of an Ionic page, you may have Ionic components like `NavController`, `LoadingContoller`, or `Platform`. Adding these components means adding pieces of the Ionic framework to your test, thus not isolating the component. As part of this example, the file `test-config/mocks-ionic.ts` is provided for creating simple mocks for many of the classes in Ionic that you may need. You may use the classes from this file in test files inside the `TestBed.configureComponent()` method argument's `provider` array as seen in our [example unit test file](https://github.com/ionic-team/ionic-unit-testing-example/blob/master/src/app/app.component.spec.ts).
